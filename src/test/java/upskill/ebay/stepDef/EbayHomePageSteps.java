@@ -25,5 +25,10 @@ public void search_for_shirts() throws Throwable {
 public void search_for_pants() throws Throwable {
 	EbayHomepageActionsObj.searchPants();
 }
+@Given("^Search for \"([^\"]*)\"$")
+public void search_for(String items) throws Throwable {
+	EbayHomepageActionsObj.searchItems(items);
+}
+
 }
 
